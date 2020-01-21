@@ -10,7 +10,7 @@ import (
 var Logger *logrus.Logger
 
 //GetLogger returns logger
-func GetLogger() *logrus.Logger {
+func GetNewLogger() *logrus.Logger {
 	logger := logrus.New()
 	logger.SetOutput(&lumberjack.Logger{
 		Filename:   "err.log",
